@@ -6,9 +6,10 @@
 
 ### 1. open the file as new variable DNA_seq
 
+# open the file as new variable DNA_seq
 with open('intron.txt','r') as raw_data:
-DNA_seq = raw_data.read()
-print(DNA_seq)
+    DNA_seq = raw_data.read()
+    print(DNA_seq)
 
 ### 2. determine if a CTCF binding site is present
 
@@ -18,9 +19,9 @@ import re
 CTCF_bs = re.compile(r"CC...AG..GG")
 # search for all the possible sequences
 if re.search(CTCF_bs,DNA_seq):
-print('CTCF binding site found!')
-else:
-print('CTCF binding site not found!')
+    print('CTCF binding site found!')
+else: 
+    print('CTCF binding site not found!')
 
 ### 3. determines if there is more than one.
 
