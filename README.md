@@ -18,3 +18,11 @@
 - Create "reverse_complement" function 
 - Use a for loop to identify the number of palindromes in the DNA sequence
 - Use numpy and pandas to create a table containing a palindrome counter for each window size
+
+**BioPython-GenBank-DiseaseVariants.ipynb**
+
+- Download SeqRecord data using Entrez data parser
+- Extract coding sequence and concatenate exons
+- Translate the sequence and compare to GenBank amino acid sequence
+- Determine suitable restriction enzymes using the identified sequence for disease variant testing
+- Test restriction sites in the normal and mutated sequences.
